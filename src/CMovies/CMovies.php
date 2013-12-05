@@ -89,13 +89,13 @@ if(isset($_SESSION['user']))
    
 }
 //// Put results into a HTML-table
-$tr = "<tr></th><th>Bild</th><th>Titel " . $this->orderby('title') . "</th><th>År " . $this->orderby('year') . "</th><th>Kategori</th><th>Pris (kr)</th>{$htmlrubrik}</tr>";
+$tr = "<tr><th>Bild</th><th>Titel " . $this->orderby('title') . "</th><th>År " . $this->orderby('year') . "</th><th>Kategori</th><th>Pris (kr)</th>{$htmlrubrik}</tr>";
 foreach ($res AS $key => $val) {
     if(isset($_SESSION['user']))
 {
     $htmledit="<td><a href='movie_edit.php?id={$val->id}'>editera </a></td><td><a href='movie_delete.php?id={$val->id}'> ta bort</a></td>";
 }
-    $tr .= "<tr><td><a href=movie_single.php?id={$val->id}><img src='img.php?src={$val->image}&amp;width=140&amp;height=100&amp;crop-to-fit' alt='Bild'/></a></td><td><a href=movie_single.php?id={$val->id}> {$val->title}</a></td><td>{$val->year}</td><td>{$val->category}</td><td>{$val->prise}</td>{$htmledit}</tr>";
+    $tr .= "<tr><td><a href='movie_single.php?id={$val->id}'><img src='img.php?src={$val->image}&amp;width=140&amp;height=100&amp;crop-to-fit' alt='Bild'/></a></td><td><a href='movie_single.php?id={$val->id}'> {$val->title}</a></td><td>{$val->year}</td><td>{$val->category}</td><td>{$val->prise}</td>{$htmledit}</tr>";
 }
 return $tr;
 }
