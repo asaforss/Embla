@@ -1,0 +1,164 @@
+/**
+ * General elements
+ */
+html{
+    background: #990099;
+    overflow-y: scroll;
+}
+body {
+  color: #333;
+  background: #ffffff;
+  font-family: arial, sans-serif;
+}
+h1,h2{
+    font-family: "Times New Roman",serif 
+}
+h2
+{
+    color: #660066; 
+}
+/* column-count */
+.col2 {
+ -moz-column-count:2;
+ -webkit-column-count:2;
+ column-count:2;
+  -moz-column-count:2;
+ -webkit-column-count:2;
+ }
+ 
+.dotted {border: none; border-top:dotted; color:  #aee6f9;}
+.smallimg{max-width: 100px;}
+.center {text-align: center;}
+
+.right {float:right;}
+.left {float:left;}
+ article.movie{width: 650px;}
+ article.blog{width: 750px;}
+/* html5 elements
+-------------------------------------------------------- 
+
+*/
+article,header,footer,nav,main,section,aside,figure,figcaption{display:block;}
+/**
+ * Layout of the main page elements 
+ */
+#wrapper {
+  margin: 0 auto;
+  width: 900px; 
+  padding: 10px;
+}
+ 
+ 
+/**
+ * Layout for header
+ */
+#header {
+  position: relative;
+  padding-top: 4px;
+  background-color: #ffffff;
+}
+ 
+.sitetitle {
+  position: absolute;
+  top: 6px;
+  left: 130px;
+  font-family: Allstar,"AR JULIAN";
+  color: #990099;
+  font-size: 48px;
+}
+ 
+.siteslogan {
+  position: absolute;
+  top: 65px;
+  left: 130px;
+  font-style: italic;
+  color: #666;
+}
+
+.sitelogo {
+    width: 80px;
+}
+
+nav.navmenu {
+    clear: both;
+    display: block;
+    padding: 0 1em 0 0;
+    background: #ADADFF;
+   
+}
+nav.navmenu a {
+    padding: 0.3em 1em 0 1em;
+    color: #555555;
+    font-family: Arial, sans-serif;
+    text-decoration:none;
+}
+nav.navmenu a:link    { }
+nav.navmenu a:visited { }
+nav.navmenu a:hover   { color: #111111; background: #ffff99; }
+nav.navmenu a:active  { }
+
+nav.navmenu a.selected {background:#ffff99;}
+ 
+/**
+ * Layout for main
+ */
+#main {
+  min-height: 20em;
+}
+ 
+#game100 {
+    width: 500px;
+    padding:10px;
+    background-color: #ffdfff;
+}
+#textgame{
+    min-height: 380px;
+}
+p#congrats {
+    font-size: large
+       
+}
+.latestposts {
+  display: inline-block;
+  float:left;
+  list-style-type: none;
+  margin-left:10px;
+  margin-right:10px;
+  padding-left:5px;
+  padding-right:5px;
+  margin-bottom: 10px; 
+  background-color: #f9f2f2;
+  width:260px;
+}
+.rea{
+    background-color: #ffdfff;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+}
+
+/**
+ * Layout for footer
+ */
+#footer {
+  clear: both;
+  margin-top: 40px;
+  border-top: 1px solid #cc33ff;
+  padding-top: 15px;
+  font-style: italic;
+  font-size: small;
+}
+ 
+.sitefooter {
+    color: #990099;
+}
+.copyright{
+    color: #990099;
+    font-style: normal;
+}
+
+
+
+root { 
+    display: block;
+}
+
