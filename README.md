@@ -1,8 +1,9 @@
 EMBLA-base
-
+==================
 EMBLA was developed by Åsa Forss during the course 
 "DV1485 Databases and Object-oriented programming in PHP" in autumn 2013
-It is strongly based on ANAX and the course material.
+It is strongly based on ANAX and the course material. Some of the page controllers
+are kept as example to make usage of the boilerplate easier.
 
 ANAX boilerplate
 ==================
